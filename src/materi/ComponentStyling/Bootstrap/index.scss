@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+.body {
+  font-family: "Lora", serif;
+  margin: 0px;
+}
+
+.jumbotron {
+  background-image: url("./background_img/background.jpg");
+  background-size: cover;
+  color: whitesmoke;
+  height: 500px;
+}
+
+.textarea-form {
+  padding-bottom: 40px;
+  height: auto !important;
+  resize: none;
+}
+
+.btn {
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px black !important;
+}
+
+.footer {
+  line-height: 50px;
+  margin-bottom: 0;
+}

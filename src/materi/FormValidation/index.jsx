@@ -49,7 +49,7 @@ const ValidateForm = () => {
           formValues.password
       );
     }
-  }, [formErrors]);
+  }, [formErrors, isSubmit, formValues]);
 
   const validate = (values) => {
     const errors = {};

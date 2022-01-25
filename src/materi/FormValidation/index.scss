@@ -1,0 +1,67 @@
+$blue-bg: rgb(50, 67, 141);
+$blue-btn: rgb(29, 131, 214);
+
+body {
+  background-color: $blue-bg;
+}
+
+// class
+
+.btn {
+  background: $blue-btn;
+  color: white;
+  height: "30px";
+  width: 100%;
+  padding: "10px";
+
+  &:hover {
+    background: rgb(48, 45, 253);
+    color: white;
+  }
+}
+
+.card {
+  border: 2px solid #eee;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 6px;
+}
+.card-title {
+  margin-bottom: 15px;
+  padding: 30px;
+  background-color: $blue-btn;
+  color: white;
+}
+
+.container-reg {
+  width: 50%;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group .form {
+  border-radius: 6px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+.required {
+  color: red;
+}
+
+textarea.form {
+  padding-bottom: 40px;
+  height: auto !important;
+  resize: none;
+}

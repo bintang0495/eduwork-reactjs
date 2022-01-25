@@ -2,7 +2,8 @@
 // import "./App.css";
 
 // import Component from "./materi/Component";
-import Styling from "./materi/ComponentStyling";
+// import Styling from "./materi/ComponentStyling";
+import ValidateForm from "./materi/FormValidation";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
 
     <div>
       {/* <Component /> */}
-      <Styling />
+      {/* <Styling /> */}
+      <ValidateForm />
     </div>
   );
 }

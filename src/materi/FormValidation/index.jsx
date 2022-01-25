@@ -29,7 +29,6 @@ const ValidateForm = () => {
   };
 
   useEffect(() => {
-    console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       alert(
         `
@@ -84,7 +83,7 @@ const ValidateForm = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>
-              Username <span className="required">* </span>{" "}
+              Username <span className="required">* </span>
             </label>
             <input
               type="text"

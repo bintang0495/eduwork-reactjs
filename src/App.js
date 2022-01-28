@@ -1,9 +1,11 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 
+import Main from "./materi/LifeCycle";
+
 // import Component from "./materi/Component";
 // import Styling from "./materi/ComponentStyling";
-import ValidateForm from "./materi/FormValidation";
+// import ValidateForm from "./materi/FormValidation";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
     <div>
       {/* <Component /> */}
       {/* <Styling /> */}
-      <ValidateForm />
+      {/* <ValidateForm /> */}
+      <Main />
     </div>
   );
 }

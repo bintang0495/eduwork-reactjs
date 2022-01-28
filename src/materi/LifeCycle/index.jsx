@@ -24,7 +24,7 @@ class Main extends Component {
       .get(
         `https://newsapi.org/v2/top-headlines?language=id&q=` +
           this.state.keySearch +
-          `&sortBy=publishedAt&apiKey=0771ac00dcb0427e8d225a99b863c776`
+          `&sortBy=publishedAt&apiKey=60f03c3fdb2a400d91aade0b50a5715f`
       )
       .then((result) => {
         this.setState({

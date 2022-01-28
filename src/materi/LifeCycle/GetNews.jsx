@@ -1,4 +1,5 @@
 import { Card, Col } from "react-bootstrap";
+import React from "react";
 
 const GetNews = (props) => {
   return (

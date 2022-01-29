@@ -49,9 +49,36 @@ class BuMain extends Component {
   }
 
   searchNews = (e) => {
-    this.setState({
-      keyword: e.target.value,
-    });
+    if (e.target.value !== "") {
+      axios
+        .get(
+          // `https://newsapi.org/v2/top-headlines?language=id&q=` +
+          //   this.state.keySearch +
+          //   `&sortBy=publishedAt&apiKey=60f03c3fdb2a400d91aade0b50a5715f`
+          "https://jsonplaceholder.typicode.com/albums/" +
+            e.target.value +
+            "/photos"
+        )
+        .then((result) => {
+          this.setState({
+            data: result.data,
+          });
+          if (result.data.length === 0) {
+            this.setState({
+              errMessage: "Tidak ada data",
+            });
+          } else {
+            this.setState({
+              errMessage: "",
+            });
+          }
+        })
+        .catch((error) => {
+          this.setState({
+            errMessage: "Error : " + error,
+          });
+        });
+    }
   };
 
   render() {

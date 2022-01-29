@@ -1,7 +1,9 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 
-import BuMain from "./materi/LifeCycle/buindex";
+import Main from "./materi/LifeCycle";
+
+// import BuMain from "./materi/LifeCycle/buindex";
 
 // import BackUpMain from "./materi/LifeCycle/index";
 
@@ -22,7 +24,8 @@ function App() {
       {/* <Component /> */}
       {/* <Styling /> */}
       {/* <ValidateForm /> */}
-      <BuMain />
+      {/* <BuMain /> */}
+      <Main />
     </div>
   );
 }

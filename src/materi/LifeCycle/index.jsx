@@ -12,6 +12,7 @@ class Main extends Component {
   //       data: [],
   //     };
   //   }
+  // Testing untuk nambah komen
 
   state = {
     data: [],

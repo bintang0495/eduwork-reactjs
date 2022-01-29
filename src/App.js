@@ -1,7 +1,9 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 
-import Main from "./materi/LifeCycle";
+import BuMain from "./materi/LifeCycle/buindex";
+
+// import BackUpMain from "./materi/LifeCycle/index";
 
 // import Component from "./materi/Component";
 // import Styling from "./materi/ComponentStyling";
@@ -20,7 +22,7 @@ function App() {
       {/* <Component /> */}
       {/* <Styling /> */}
       {/* <ValidateForm /> */}
-      <Main />
+      <BuMain />
     </div>
   );
 }

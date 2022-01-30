@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 
-import Main from "./materi/LifeCycle";
+import Main from "./materi/Hook";
 
 // import BuMain from "./materi/LifeCycle/buindex";
 

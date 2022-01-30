@@ -1,30 +1,11 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-
+//fungsional component
 import Main from "./materi/Hook";
-
-// import BuMain from "./materi/LifeCycle/buindex";
-
-// import BackUpMain from "./materi/LifeCycle/index";
-
-// import Component from "./materi/Component";
-// import Styling from "./materi/ComponentStyling";
-// import ValidateForm from "./materi/FormValidation";
+//class component
+// import Main from "./materi/LifeCycle";
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-
-    //   </header>
-    // </div>
-
     <div>
-      {/* <Component /> */}
-      {/* <Styling /> */}
-      {/* <ValidateForm /> */}
-      {/* <BuMain /> */}
       <Main />
     </div>
   );

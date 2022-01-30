@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
 import { Container, Form, Navbar, Row } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 import GetNews from "../LifeCycle/GetNews";
 
@@ -14,9 +14,30 @@ const Main = () => {
   const [keySearch, setKeySearch] = useState("");
   const [msgErr, setMsgErr] = useState("");
 
-  useEffect(() => getData(), [keySearch]);
+  // const getData = () => {
+  //   axios
+  //     .get(
+  //       `https://newsapi.org/v2/top-headlines?language=id&q=` +
+  //         keySearch +
+  //         `&sortBy=publishedAt&apiKey=60f03c3fdb2a400d91aade0b50a5715f`
+  //     )
+  //     .then((result) => {
+  //       setInitialData({
+  //         data: result.data.articles,
+  //       });
+  //       if (result.data.articles.length === 0) {
+  //         setMsgErr("Tidak ada berita");
+  //       } else {
+  //         setMsgErr("");
+  //       }
+  //       // console.log(keySearch);
+  //     })
+  //     .catch((error) => setMsgErr(error));
+  // };
 
-  const getData = () => {
+  // useEffect(() => getData(), [keySearch, getData]);
+
+  const getData = useCallback(() => {
     axios
       .get(
         `https://newsapi.org/v2/top-headlines?language=id&q=` +
@@ -35,7 +56,9 @@ const Main = () => {
         // console.log(keySearch);
       })
       .catch((error) => setMsgErr(error));
-  };
+  }, [keySearch]);
+
+  useEffect(() => getData(), [getData]);
 
   let searchNews = (e) => {
     setKeySearch(e.target.value);

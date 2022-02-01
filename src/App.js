@@ -1,12 +1,9 @@
-//fungsional component
-import Main from "./materi/Hook";
-//class component
-// import Main from "./materi/LifeCycle";
+import Routing from './materi/Routing/Tugas';
 
 function App() {
   return (
     <div>
-      <Main />
+      <Routing />
     </div>
   );
 }

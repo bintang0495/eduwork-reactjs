@@ -11,8 +11,8 @@ const Nav = () => {
       <Link to='/'>
         <IoIosHome /> Home
       </Link>
-      <Link to='/news'>
-        <ImNewspaper /> News
+      <Link to='/registrasi'>
+        <ImNewspaper /> Registrasi
       </Link>
       <Link to='/profile'>
         <FaUserFriends /> Profile
